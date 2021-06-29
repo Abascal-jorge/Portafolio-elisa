@@ -1,0 +1,51 @@
+/* En movil se vera en 360 * 81 segun figma leonidas esteban*/
+/* Pantalla completa del diseño 1366px */
+@import "./header.css";
+@import "./button.css";
+@import "./menu.css";
+@import "./social.css";
+@import "./banner.css";
+@import "./proyectos.css";
+@import "./formulario.css";
+@import "./footer.css";
+
+:root{
+    --color-principal: linear-gradient(135deg, #FAD7A1 0%, #E96D71 100%);
+    --color-button: #42E2B8;
+    --black: #0F0A0A;
+
+    --fontBase: 'Oxygen', sans-serif;
+    --headline1: bold 95px/154px var(--fontBase);
+    --headline2: bold 59px/95px var(--fontBase);
+    --headline3: bold 48px/78px var(--fontBase);
+    --headline4: bold 34px/55px var(--fontBase);
+    --headline5: bold 24px/39px var(--fontBase);
+    --body1: 400 16px/26px var(--fontBase);
+    --body2: 400 14px/23px var(--fontBase);
+    --button: bold 14px/23px var(--fontBase);
+    --caption: 400 12px/19px var(--fontBase);
+    --intro: 400 24px/39px var(--fontBase);
+    --intro2: 300 34px/55px var(--fontBase);
+    --testimonio: bold 16px/26px var(--fontBase);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--color-principal);
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+}
+
+.contenedor{
+    max-width: 1366px;
+    margin: auto;
+}
+
+.wrapper{
+    padding: 0 16px;
+}

@@ -1,0 +1,48 @@
+.footer{
+    text-align: center;
+}
+
+.footer .logo{
+    display: none;
+}
+
+.footer .social{
+    justify-content: center;
+    padding-bottom: 24px;
+}
+
+.hecho{
+    padding-bottom: 8px;
+    font: var(--body1);
+}
+
+.copy{
+    padding-bottom: 24px;
+    font: var(--body1);
+}
+
+@media screen  and (min-width: 960px){
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer .logo{
+        display: block;
+        order: -11;
+    }
+
+    .footer .social{
+        order: 3;
+        padding: 0;
+    }
+
+    .parrafo{
+        display: flex;
+        align-items: center;
+    }
+    .parrafo p{
+        padding: 0;
+    }
+}

@@ -1,0 +1,135 @@
+.contenido-proyecto{
+    padding: 40px 0;
+}
+.inicio-proyectos{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.inicio-proyectos img{
+    margin: auto;
+}
+
+.inicio-proyectos .intro{
+    font: var(--intro);
+}
+
+.inicio-proyectos .compartir{
+    font: var(--headline5);
+}
+
+/*Botones*/
+.button-codigos{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+    width: 100%;
+}
+.button-codigos button{
+    flex: 1;
+}
+
+/*Texto*/
+.info-proyecto p{
+    padding: 20px 0;
+    font: var(--body1);
+}
+
+
+/*LINK*/
+.link{
+    padding: 4px 8px;
+    text-decoration: none;
+    background: var(--black);
+    color: var(--color-button);
+    font: var(--headline5);
+    box-shadow: -4px 4px 0 rgba(255,255,255);
+}
+
+.img-proyecto{
+    text-align: center;
+}
+
+
+/*Estilos textos testimonio*/
+.testimonio{
+    border-radius: 24px;
+    border-block-start: 4px solid rgba(255, 255, 255, .2);
+    border-inline-start: 4px solid rgba(255, 255, 255, .2);
+    padding: 24px;
+    text-align: center;
+    margin: 40px auto 80px auto;
+    background: rgba(255, 255, 255, 0.2);
+}
+.testimonio .test-descripcion{
+    font: var(--testimonio);
+    text-align: left;
+}
+.testimonio .cita{
+    font: var(--caption);
+    color: var(--black);
+    opacity: .5;
+    text-align: left;
+}
+@media screen and (min-width: 960px){
+    
+    .inicio-proyectos{
+        padding: 200px 233px;
+    }
+    
+    .inicio-proyectos .intro{
+        font: var(--intro2);
+    }
+
+    .ipad img{
+        width: 638px;
+        height: 628px;
+    }
+
+    .laptop img{
+        width: 637px;
+        height: 392px;
+    }
+
+
+    .testimonio .test-descripcion{
+        font: var(--headline4);
+        text-align: center;
+    }
+    .testimonio .cita{
+        text-align: center;
+        font: var(--headline5);
+    }
+
+    .icon-test img{
+        width: 80px;
+        height: 80px ;
+    }
+
+    .info-proyecto .link{
+        font: var(--headline5);
+    }
+}
+
+@media screen and (min-width: 680px){
+    .contenido-proyecto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenido-proyecto .img-proyecto{
+        flex-basis: 60%;
+    }
+    .contenido-proyecto .info-proyecto{
+        flex-basis: 40%;
+    }
+    .contenido-proyecto .right{
+        order: 2;
+    }
+    .button-codigos{
+        flex-direction: row;
+    }
+}

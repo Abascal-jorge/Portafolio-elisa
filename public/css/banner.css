@@ -1,0 +1,50 @@
+.description-personal{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.info-personal{
+    padding-bottom: 40px;
+}
+
+.info-personal .description-personal h3{
+    font:var(--headline3);
+}
+
+.info-personal .description-personal h3 span{
+    font: var(--headline2);
+}
+
+.info-personal .description-personal p{
+    font: var(--body1);
+}
+
+@media screen and (min-width:400px){
+    .img-perfil{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:768px){
+    .info-personal{
+        display: flex;
+        margin-top: 70px;
+    }
+    .description-personal{
+        flex: 1;
+    }
+    .img-perfil{
+        order: 2;
+        flex: 1;
+    }
+
+}
+
+@media screen and (min-width:1024px){
+    .img-perfil img{
+        width: 604px;
+        height: 611px;
+    }
+}
